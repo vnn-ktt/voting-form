@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-Slider</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="form-slider-container">
+      <div class="testimonial mySwiper">
+        <div class="form swiper-wrapper" action="#" method="POST">
+          <div class="slide swiper-slide">
+            <img src="images/yader.webp" alt="" class="image" />
+            <p class="question">К какой отрасли относится Гринатом?</p>
+            <div class="input-container">
+              <input
+                id="sector-1"
+                type="radio"
+                name="sector"
+                value="metall"
+                class="input input-radio"
+              />
+              <label class="label" for="sector-1"
+                >Металлургическая отрасль</label
+              >
+
+              <input
+                id="sector-2"
+                type="radio"
+                name="sector"
+                value="industry"
+                class="input input-radio"
+              />
+              <label class="label" for="sector-2">Легкая промышленность</label>
+
+              <input
+                id="sector-3"
+                type="radio"
+                name="sector"
+                value="atom"
+                class="input input-radio"
+              />
+              <label class="label" for="sector-3">Атомная отрасль</label>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/greenatom.jpg" alt="" class="image" />
+            <p class="question">Гринатом является...</p>
+            <div class="input-container">
+              <input
+                id="greenatom-1"
+                type="radio"
+                name="greenatom"
+                value="integrator"
+                class="input input-radio"
+              />
+              <label class="label" for="greenatom-1"
+                >ИТ-интегратором госкорпорации Росатом</label
+              >
+
+              <input
+                id="greenatom-2"
+                type="radio"
+                name="greenatom"
+                value="service"
+                class="input input-radio"
+              />
+              <label class="label" for="greenatom-2"
+                >Сервисной компаниней
+              </label>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/city.jpg" alt="" class="image" />
+            <p class="question">Каков масштаб компании Гринатом?</p>
+            <div class="input-container">
+              <input
+                id="scale-1"
+                type="radio"
+                name="scale"
+                value="325000"
+                class="input input-radio"
+              />
+              <label class="label" for="scale-1"
+                >32 города и 5000 сотрудников
+              </label>
+
+              <input
+                id="scale-2"
+                type="radio"
+                name="scale"
+                value="101600"
+                class="input input-radio"
+              />
+              <label class="label" for="scale-2"
+                >10 городов и 1600 сотрудников
+              </label>
+
+              <input
+                id="scale-2"
+                type="radio"
+                name="scale"
+                value="457000"
+                class="input input-radio"
+              />
+              <label class="label" for="scale-2"
+                >45 городов и 7000 сотрудников
+              </label>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <p class="question">
+              Вы ответили на все вопросы и опрос был окончен.
+            </p>
+            <input
+              id="submit"
+              type="submit"
+              onclick="openModal()"
+              class="input input-submit"
+              value="Отправить результаты"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <p>Форма была успешно отправлена!</p>
+        <span class="close" onclick="closeModal()">&times;</span>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
